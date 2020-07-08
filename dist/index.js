@@ -3,13 +3,12 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.initializeTextAreaAutoGrow = exports.default = void 0;
+exports.initializeTextAreaAutoGrow = exports["default"] = void 0;
 
 var autoGrow = function autoGrow(textArea) {
   if (textArea instanceof HTMLTextAreaElement) {
-    var scrollHeight = textArea.scrollHeight.toString();
     textArea.style.height = 0;
-    textArea.style.height = "".concat(scrollHeight, "px");
+    textArea.style.height = "".concat(textArea.scrollHeight, "px");
   }
 };
 
@@ -25,4 +24,4 @@ var initializeTextAreaAutoGrow = function initializeTextAreaAutoGrow(textArea) {
 
 exports.initializeTextAreaAutoGrow = initializeTextAreaAutoGrow;
 var _default = autoGrow;
-exports.default = _default;
+exports["default"] = _default;
