@@ -1,0 +1,27 @@
+{
+  "name": "@ivanhanak_com/js-textarea-autogrow",
+  "version": "1.0.0",
+  "description": "Lightweight javascript library to auto-grow your <textarea /> on user input.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dist": "babel src/index.js -d dist",
+    "build": "npm run dist"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "js",
+    "lightweight-plugin",
+    "textarea",
+    "autogrow",
+    "es6"
+  ],
+  "author": "@hanakivan",
+  "repository": "hanakivan/js-textarea-autogrow",
+  "license": "https://www.imdb.com/title/tt0097742/",
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4"
+  }
+}
