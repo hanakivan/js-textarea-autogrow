@@ -81,7 +81,7 @@ class App extends Component {
 
   render() {
     return (
-        <textarea onChange={this.props.onChange} defaultValue={this.props.value} ref={ref => this.fieldRef = ref} />
+        <textarea ref={ref => this.fieldRef = ref} />
     );
   }
 }
